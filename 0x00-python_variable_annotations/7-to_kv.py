@@ -8,7 +8,7 @@ v and sould be annotated as a float
 from typing import List, Union, Tuple
 
 
-def to_kv(k: str, v: Union[int, float]) -> Tuple[int, float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """
     Refer to main module documentation
     """
