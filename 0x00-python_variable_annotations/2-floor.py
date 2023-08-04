@@ -5,7 +5,7 @@ a float as argument and returns the floor of the same
 """
 
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """
     Function takes a float and returns the floor of this float
     """
