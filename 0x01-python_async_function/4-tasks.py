@@ -12,7 +12,7 @@ async def task_wait_n(n: int, max_delay: float) -> List[float]:
     Function calls the task_wait_random async function and returns
     a list of times
     """
-    times_list = []
+    times_list: list = []
     for i in range(n):
         task = await task_wait_random(max_delay)
         times_list.append(task)
