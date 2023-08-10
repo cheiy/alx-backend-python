@@ -12,6 +12,6 @@ async def wait_n(n: int, max_delay: int) -> float:
     Function spawns wait_random n times
     """
     times_list: float = []
-    for i in range(n):
+    for i in range(n: int):
         times_list.append(await wait_random(max_delay))
     return float(times_list)
