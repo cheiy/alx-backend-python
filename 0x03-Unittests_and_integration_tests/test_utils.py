@@ -14,7 +14,11 @@ class TestAccessNestedMap(unittest.TestCase):
     TestAccessNestedMap.test_access_nested_map
     method
     """
-    @parameterized.expand
+    @parameterized.expand([
+        ({"a": 1}, ("a",), 1),
+        ({"a": {"b": 2}}, ("a",), {"b": 2}),
+        ({"a": {"b": 2}}, ("a", "b"), 2),
+    ])
     def test_access_nested_map(
             self, nested_map: Mapping,
             path: Sequence,
