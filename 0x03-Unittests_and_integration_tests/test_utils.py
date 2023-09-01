@@ -3,7 +3,7 @@
 Module contains class fro testing the utils module
 """
 import unittest
-from utils import access_nested_map
+from utils import access_nested_map, get_json
 from parameterized import parameterized
 from typing import Dict, Mapping, Sequence, Tuple, Union
 from unittest.mock import Mock, patch
