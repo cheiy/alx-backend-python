@@ -6,6 +6,7 @@ import unittest
 from utils import access_nested_map
 from parameterized import parameterized
 from typing import Dict, Mapping, Sequence, Tuple, Union
+from unittest.mock import Mock, patch
 
 
 class TestAccessNestedMap(unittest.TestCase):
